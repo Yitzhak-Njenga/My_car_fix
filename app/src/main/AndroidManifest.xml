@@ -11,6 +11,7 @@
         android:theme="@style/Theme.MyCarFix">
         <activity
             android:name=".DashBoardActivity"
+            android:theme="@style/Theme.Material3.Light.NoActionBar"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

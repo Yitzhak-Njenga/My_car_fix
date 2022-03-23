@@ -1,9 +1,12 @@
 package com.example.mycarfix;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Toast;
 
@@ -16,6 +19,7 @@ public class DashBoardActivity extends AppCompatActivity {
     @BindView(R.id.garage) CardView mGarage;
     @BindView(R.id.service) CardView mService;
     @BindView(R.id.mechanic) CardView mMechanic;
+    @BindView(R.id.toolbar) Toolbar mToolbar;
 
 
 
@@ -24,6 +28,18 @@ public class DashBoardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dash_board);
         ButterKnife.bind(this);
+        setSupportActionBar(mToolbar);
+        getSupportActionBar().setIcon(R.drawable.ic_baseline_menu_24);
+        getSupportActionBar().setTitle("");
+
+
+
+
+
+
+
+
+
 
         mPurchase.setOnClickListener(new View.OnClickListener() {
             @Override
